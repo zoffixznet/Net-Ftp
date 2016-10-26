@@ -1,4 +1,5 @@
 {
+    "perl" : "6.*",
     "name" : "Net::FTP",
     "version" : "0.6.0",
     "description" : "A ftp client written in perl6",

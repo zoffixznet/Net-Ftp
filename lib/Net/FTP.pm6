@@ -315,7 +315,7 @@ method put(Str $path,
         my $remoteio = $remote-path.IO;
 
         if $remoteio ~~ :d {
-            $remote = $remoteio.abspath() ~ '/' ~ $path.IO.basename();
+            $remote = $remoteio.absolute() ~ '/' ~ $path.IO.basename();
         } else {
             $remote := $remote-path;
         }
